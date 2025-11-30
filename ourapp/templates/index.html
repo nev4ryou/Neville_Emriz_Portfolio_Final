@@ -1,0 +1,57 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neville & Emriz Portfolio</title>
+    
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header class="welcome-section">
+        <h1 class="welcome-title">WELCOME!</h1>
+        <p class="welcome-authors">created by Neville and Emriz</p>
+    </header>
+
+    <main class="main-content">
+        
+        <section class="dev-profiles-section">
+            
+            <a href="{% url 'neville_profile' %}" class="dev-card-link">
+                <div class="dev-card back-end-dev glow-effect">
+                    <div class="role-title">BACK END DEV</div>
+                    <div class="card-inner">
+                        <div class="img-placeholder">
+                            <img src="{% static 'images/placeholder_back.jpg' %}" alt="Neville's Profile" class="profile-img">
+                        </div>
+                        <h3 class="dev-name">Neville Gudayo</h3>
+                    </div>
+                </div>
+            </a>
+            
+            <a href="{% url 'emriz_profile' %}" class="dev-card-link">
+                <div class="dev-card front-end-dev glow-effect">
+                    <div class="role-title">FRONT END DEV</div>
+                    <div class="card-inner">
+                        <div class="img-placeholder">
+                            <img src="{% static 'images/placeholder_front.jpg' %}" alt="Emriz's Profile" class="profile-img">
+                        </div>
+                        <h3 class="dev-name">Emriz De Guzman</h3>
+                    </div>
+                </div>
+            </a>
+            
+        </section>
+
+        <section class="achievements-section">
+            <a href="{% url 'achievements' %}" class="achievements-link">
+                <h2 class="achievements-title">OUR ACHIEVEMENTS</h2>
+            </a>
+        </section>
+        
+    </main>
+</body>
+</html>

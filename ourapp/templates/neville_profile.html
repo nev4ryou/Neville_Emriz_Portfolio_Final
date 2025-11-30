@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neville Gudayo - Back End Dev</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="sub-page">
+    <header class="sub-header profile-header">
+        <a href="{% url 'home' %}" class="back-btn">← Back to Main Page</a>
+        <h1 class="page-title profile-header-title">NEVILLE GUDAYO | Back End Architect</h1>
+    </header>
+
+    <main class="page-main-content profile-layout">
+        <aside class="profile-sidebar glow-border">
+            <div class="profile-img-lg"><img src="{% static 'images/placeholder_back.jpg' %}" alt="Neville's Profile"></div>
+            <h2>Neville Gudayo</h2>
+            <p class="role-spec">Python & Django Expert | Database Optimization Specialist</p>
+            <div class="contact-info">
+                <span>**Email:** neville@example.com</span>
+                <span>**GitHub:** nev4ryou</span>
+            </div>
+            <a href="#" class="btn-contact">Get in Touch</a>
+        </aside>
+
+        <section class="profile-details">
+            <h3 class="section-heading">My Philosophy</h3>
+            <p class="profile-intro">I transform complex logic into efficient, scalable, and secure APIs. My focus is on writing **clean, testable Python code** that serves as the backbone for high-traffic applications. I ensure data integrity and system reliability are paramount in every project.</p>
+
+            <h3 class="section-heading">Core Competencies</h3>
+            <ul class="skill-list back-end-skills">
+                <li><span class="skill-icon">🐍</span> **Python 3.x:** Expert-level scripting and application development.</li>
+                <li><span class="skill-icon">⚙️</span> **Django & DRF:** Building RESTful APIs and complex web backends.</li>
+                <li><span class="skill-icon">💾</span> **SQL & ORMs:** PostgreSQL, SQLite, and optimized Django ORM queries.</li>
+                <li><span class="skill-icon">☁️</span> **Deployment:** CI/CD integration, Gunicorn/WhiteNoise configuration.</li>
+            </ul>
+
+            <h3 class="section-heading">Featured Project (Data Flow)</h3>
+            <div class="project-summary">
+                <p>Designed the robust API structure for a real-time inventory management system, reducing data latency by 40% through efficient caching strategies.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

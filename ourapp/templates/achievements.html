@@ -1,0 +1,40 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Achievements - Portfolio</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="sub-page">
+    <header class="sub-header achievements-header">
+        <a href="{% url 'home' %}" class="back-btn">← Back to Main Page</a>
+        <h1 class="page-title achievements-title-lg">ACHIEVEMENTS | PROJECTS & SKILLS</h1>
+    </header>
+
+    <main class="page-main-content">
+        <section class="achievement-list">
+            
+            <div class="achievement-item fade-in-up glow-border">
+                <h3 class="item-title">🏆 **PROJECT ALPHA: Full-Stack E-Commerce System**</h3>
+                <p>Designed and launched a scalable e-commerce platform from scratch. Integrated modern payment gateways and optimized database queries for sub-50ms response times under heavy load.</p>
+                <span class="tech-stack">**Tech Used:** Django, PostgreSQL, Stripe API, Docker.</span>
+            </div>
+            
+            <div class="achievement-item fade-in-up glow-border">
+                <h3 class="item-title">✨ **UI/UX Excellence in Modern Web Design**</h3>
+                <p>Implemented a sleek, responsive, and accessible dark-mode interface (ito mismong portfolio) with custom CSS animations and highly optimized asset loading for a flawless user experience.</p>
+                <span class="tech-stack">**Tech Used:** HTML5, Advanced CSS Grid/Flexbox, Vanilla JS, Figma Prototyping.</span>
+            </div>
+
+            <div class="achievement-item fade-in-up glow-border">
+                <h3 class="item-title">🥇 **Continuous Integration & Deployment (CI/CD)**</h3>
+                <p>Mastered modern deployment pipelines using GitHub Actions and Render, ensuring zero-downtime updates and automated testing for every push to the main branch.</p>
+                <span class="tech-stack">**Tech Used:** Git, GitHub Actions, Render, Shell Scripting.</span>
+            </div>
+        </section>
+    </main>
+</body>
+</html>

@@ -1,0 +1,48 @@
+{% load static %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Emriz De Guzman - Front End Dev</title>
+    <link rel="stylesheet" href="{% static 'css/style.css' %}">
+    <link href="https://fonts.googleapis.com/css2?family=Oswald:wght@500;700&family=Montserrat:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body class="sub-page">
+    <header class="sub-header profile-header">
+        <a href="{% url 'home' %}" class="back-btn">← Back to Main Page</a>
+        <h1 class="page-title profile-header-title">EMRIZ DE GUZMAN | Front End Innovator</h1>
+    </header>
+
+    <main class="page-main-content profile-layout">
+        <aside class="profile-sidebar glow-border">
+            <div class="profile-img-lg"><img src="{% static 'images/placeholder_front.jpg' %}" alt="Emriz's Profile"></div>
+            <h2>Emriz De Guzman</h2>
+            <p class="role-spec">Design & User Experience Champion | CSS Animation Specialist</p>
+            <div class="contact-info">
+                <span>**Email:** emriz@example.com</span>
+                <span>**Design Portfolio:** emriz_design</span>
+            </div>
+            <a href="#" class="btn-contact">Hire Me</a>
+        </aside>
+
+        <section class="profile-details">
+            <h3 class="section-heading">My Philosophy</h3>
+            <p class="profile-intro">I bridge the gap between aesthetics and functionality. I obsess over creating **pixel-perfect, highly responsive interfaces** that engage the user. My goal is to deliver beautiful, smooth, and accessible digital experiences.</p>
+
+            <h3 class="section-heading">Core Competencies</h3>
+            <ul class="skill-list front-end-skills">
+                <li><span class="skill-icon">🎨</span> **Advanced CSS/SASS:** Custom animations, responsive layouts (Flexbox/Grid).</li>
+                <li><span class="skill-icon">💻</span> **HTML5 Semantics:** Building accessible and structured content.</li>
+                <li><span class="skill-icon">⚡</span> **JavaScript (ES6+):** Interactive DOM manipulation and performance tweaks.</li>
+                <li><span class="skill-icon">🖼️</span> **Design Tools:** Figma and Adobe XD for high-fidelity prototyping.</li>
+            </ul>
+
+            <h3 class="section-heading">Featured Project (UI/UX)</h3>
+            <div class="project-summary">
+                <p>Led the redesign of a corporate dashboard interface, improving user efficiency by 25% based on usability testing and feedback implementation.</p>
+            </div>
+        </section>
+    </main>
+</body>
+</html>
