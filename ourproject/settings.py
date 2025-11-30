@@ -20,11 +20,17 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 # Quick-start development settings - unsuitable for production
 # See https://docs.djangoproject.com/en/5.0/howto/deployment/checklist/
 
+# **********************************************
+# *** KRITIKAL NA SETTINGS PARA SA DEPLOYMENT ***
+# **********************************************
+
+# WARNING: ITO AY HARDCODED KEY. GINAGAWA LANG ITO DAHIL SA REQUEST MO.
 SECRET_KEY = 'django-insecure-@e^p_w=l^m98-q-!c5d&j2a!5(3w_x^1v(i+74n'
 
 # DEBUG = FALSE PARA SA LIVE SITE (RENDER)
 DEBUG = False
 
+# ALLOWED_HOSTS = ['*'] PARA TANGGAPIN ANG LAHAT NG DOMAIN (HINDI SECURE)
 ALLOWED_HOSTS = ['*'] 
 
 # **********************************************
@@ -121,10 +127,11 @@ USE_TZ = True
 
 STATIC_URL = 'static/'
 
-# Dito hahanapin ni Django ang static files sa development
-STATICFILES_DIRS = [
-    os.path.join(BASE_DIR, 'ourapp/static'),
-]
+# **********************************************
+# *** FIX: Inalis ang StaticFiles_DIRS para iwasan ang redundancy ***
+# Dahil naka-APP_DIRS: True, hahanapin ni Django ang files sa ourapp/static/
+STATICFILES_DIRS = [] 
+# **********************************************
 
 # Dito kokolektahin ni 'collectstatic' ang lahat ng static files
 STATIC_ROOT = BASE_DIR / 'staticfiles'
